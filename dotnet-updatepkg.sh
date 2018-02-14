@@ -1,0 +1,16 @@
+#!/bin/bash
+
+DIR="$(dirname "$(readlink $0)")"
+
+if type fsharpi > /dev/null 2>&1; then
+    CMD="fsharpi"
+elif type fsi > /dev/null 2>&1; then
+    CMD="fsi"
+else
+  echo "F# Interactive is required to execute scripts"
+  exit -1
+fi
+
+echo "Running dotnet-updatepkg.fsx ..."
+
+exec $CMD $DIR/dotnet-updatepkg.fsx $*
