@@ -103,13 +103,13 @@ module Models =
             {   PackageRef.Name = name
                 Version = version        }
 
-        // Compares two package versions
-        //
-        // This function implements the following behavior:
-        // 5.10.15 < 10.0.0 => true
-        // 1.0.0-beta2 > 1.0.0-alpha6 => true
-        // 1.0.0-rc1 > 1.0.0-beta4 => true
-        // 1.0.0 > 1.0.0-rc2 => true
+        /// Compares two package versions
+        ///
+        /// This function implements the following behavior:
+        /// 5.10.15 < 10.0.0 => true
+        /// 1.0.0-beta2 > 1.0.0-alpha6 => true
+        /// 1.0.0-rc1 > 1.0.0-beta4 => true
+        /// 1.0.0 > 1.0.0-rc2 => true
         let compareVs lhs rhs =
             let majorDiff = lhs.Major - rhs.Major
             if majorDiff <> 0 then majorDiff 
