@@ -16,4 +16,11 @@ to get usage information.
 Coming soon™️
 
 ### Linux
-Coming soon™️
+
+First install `linuxbrew` from [here](http://linuxbrew.sh/)
+
+Then follow the MacOS instructions.
+
+## Troubleshooting
+
+If you run the `dotnet updatepkg` command and get Exceptions or F# compilation erros, please ensure that you have an up-to-date Mono installation.
