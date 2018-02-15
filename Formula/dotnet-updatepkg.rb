@@ -4,7 +4,7 @@ class DotnetUpdatepkg < Formula
   desc "Utility script that can consolidate and update nuget packages across projects"
   
   homepage "https://github.com/Unity-Technologies/dotnet-updatepkg"
-  url "https://github.com/Unity-Technologies/dotnet-updatepkg.git", tag => script_version 
+  url "https://github.com/Unity-Technologies/dotnet-updatepkg.git", :tag => script_version 
   head "https://github.com/Unity-Technologies/dotnet-updatepkg.git"
 
   def install
