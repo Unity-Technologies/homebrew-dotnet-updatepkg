@@ -1,6 +1,6 @@
 class DotnetUpdatepkg < Formula
-  homepage "https://gitlab.internal.unity3d.com/CDS/dotnet-updatepkg"
-  head "git@gitlab.internal.unity3d.com:CDS/dotnet-updatepkg.git"
+  homepage "https://github.com/Unity-Technologies/dotnet-updatepkg"
+  head "https://github.com/Unity-Technologies/dotnet-updatepkg.git"
 
   def install
     bin.install 'dotnet-updatepackage', 'dotnet-updatepackage.fsx'
