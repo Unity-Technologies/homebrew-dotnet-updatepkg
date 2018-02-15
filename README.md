@@ -3,11 +3,13 @@ Utility script that can consolidate and update nuget packages across projects
 
 ## Installation
 
-### MacOS
-- Clone the repo somewhere.
-- Navigate to that folder
-- run `install.sh`
-You shuld now be able to go to the root of any .Net Core solution and run `dotnet updatepkg`
+### MacOS (with homebrew)
+
+> `$ brew tap Unity-Technologies/dotnet-updatepkg`
+
+> `$ brew install dotnet-updatepkg`
+
+You should now be able to go to the root of any .Net Core solution and run `dotnet updatepkg`
 to get usage information.
 
 ### Windows 

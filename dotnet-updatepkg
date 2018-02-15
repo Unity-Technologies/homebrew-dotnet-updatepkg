@@ -1,6 +1,6 @@
 #!/bin/bash
 
-DIR="$(dirname "$(readlink $0)")"
+DIR="$(dirname $0)"
 
 if type fsharpi > /dev/null 2>&1; then
     CMD="fsharpi"
